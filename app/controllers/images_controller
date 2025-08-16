@@ -1,0 +1,26 @@
+# app/controllers/images_controller.rb
+class ImagesController < ApplicationController
+  protect_from_forgery with: :null_session
+
+  def ping
+    render json: { ok: true, from: "ImagesController#ping" }
+  end
+
+  def matrix
+    @use_b = params[:use_b].present?
+
+    @file_a = params[:image_a]
+    @file_b = params[:image_b] if @use_b
+
+    if @file_a.present?
+      @mat_a = MiniMagickMatrixService.new(@file_a.tempfile.path).call
+    end
+
+    if @use_b && @file_b.present?
+      @mat_b = MiniMagickMatrixService.new(@file_b.tempfile.path).call
+    end
+
+    @add_value = params[:add_value].presence || 0
+    # render :new ou :index conforme sua view
+  end
+end

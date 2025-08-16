@@ -8,7 +8,9 @@ RUN apt-get update -qq && apt-get install -y \
     nodejs \
     npm \
     yarn \
+    imagemagick \
     && rm -rf /var/lib/apt/lists/*
+
 
 # Atualize RubyGems e Bundler
 RUN gem update --system

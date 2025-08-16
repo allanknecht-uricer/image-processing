@@ -1,83 +1,200 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Processamento de Imagens</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="container py-4">
+    <h1 class="mb-4">Processamento de Imagens</h1>
+  
+    <%= form_with url: images_path, multipart: true, local: true do %>
+  
+      <!-- Checkbox: usar duas imagens -->
+      <div class="form-check mb-3">
+        <%= check_box_tag :use_b, "1", (@use_b || false), id: "useB" %>
+        <label class="form-check-label" for="useB">Usar duas imagens (A + B)</label>
+      </div>
+  
+      <!-- Linha 1: inputs -->
+      <div class="row g-3 mb-3">
+        <div class="col-md-4">
+          <label class="form-label" for="inputA">Imagem A</label>
+          <input id="inputA" name="image_a" type="file" class="form-control" accept="image/*">
+        </div>
+  
+        <!-- Input B aparece só se usar duas imagens -->
+        <div id="inputBGroup" class="col-md-4 <%= @use_b ? '' : 'd-none' %>">
+          <label class="form-label" for="inputB">Imagem B (opcional)</label>
+          <input id="inputB" name="image_b" type="file" class="form-control" accept="image/*">
+        </div>
+      </div>
+  
+      <!-- Linha 2: cards de preview -->
+      <div class="row g-3 mb-4">
+        <!-- Card A -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-header">Imagem A</div>
+            <div class="card-body d-flex flex-column text-center">
+              <div id="previewA"
+                   class="preview-box flex-grow-1 d-flex align-items-center justify-content-center"
+                   data-max-w="640" data-max-h="480">
+                <div class="text-muted">Nenhuma imagem</div>
+              </div>
+              <div id="captionA" class="small text-muted text-center mt-2 mt-auto"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card B (condicional) -->
+        <div id="cardB" class="col-md-4 <%= @use_b ? '' : 'd-none' %>">
+          <div class="card h-100">
+            <div class="card-header">Imagem B</div>
+            <div class="card-body d-flex flex-column text-center">
+              <div id="previewB"
+                   class="preview-box flex-grow-1 d-flex align-items-center justify-content-center"
+                   data-max-w="640" data-max-h="480">
+                <div class="text-muted">Nenhuma imagem</div>
+              </div>
+              <div id="captionB" class="small text-muted text-center mt-2 mt-auto"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card Resultado -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-header">Resultado</div>
+            <div class="card-body text-center">
+                <%#= image_tag @result_url, class: "img-fluid rounded" if defined?(@result_url) %>
+                <div class="text-muted">Será exibido após aplicar operação</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- NAV TABS em 3 colunas (A, B*, A⇄B*)  *condicionais -->
+      <ul class="nav nav-tabs nav-fill w-100" id="opsTabs" role="tablist">
+        <li class="nav-item" role="presentation" id="tab-a-item">
+          <button class="nav-link active" id="tab-a" data-bs-toggle="tab" data-bs-target="#pane-a" type="button" role="tab">
+            Imagem A
+          </button>
+        </li>
+  
+        <li class="nav-item <%= @use_b ? '' : 'd-none' %>" role="presentation" id="tab-b-item">
+          <button class="nav-link" id="tab-b" data-bs-toggle="tab" data-bs-target="#pane-b" type="button" role="tab">
+            Imagem B
+          </button>
+        </li>
+  
+        <li class="nav-item <%= @use_b ? '' : 'd-none' %>" role="presentation" id="tab-mix-item">
+          <button class="nav-link" id="tab-mix" data-bs-toggle="tab" data-bs-target="#pane-mix" type="button" role="tab">
+            A ⇄ B
+          </button>
+        </li>
+      </ul>
+  
+      <div class="tab-content border-start border-end border-bottom p-3 rounded-bottom" id="opsContent">
+<!-- PANE: IMAGEM A -->
+<div class="tab-pane fade show active" id="pane-a" role="tabpanel" aria-labelledby="tab-a">
+    <div class="row g-4 align-items-start">
+      <!-- ESQUERDA: sliders -->
+      <h6 class="mb-3">Ajustes da Imagem A</h6>
+      <div class="col-12 col-lg-7">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <div class="container py-4">
-        <h1 class="mb-4">Processamento de Imagens</h1>
-        
-        <div class="row g-3 mb-3">
+  
+        <label class="form-label">Adição (0–255)</label>
+  
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <label class="form-label mb-1">R</label>
+            <small class="text-muted">Valor atual: <span id="a_add_r_out"><%= @a_add_r || 0 %></span></small>
+          </div>
+          <%= range_field_tag :a_add_r, (@a_add_r || 0),
+                min: 0, max: 255, step: 1, class: "form-range", id: "a_add_r" %>
+        </div>
+  
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <label class="form-label mb-1">G</label>
+            <small class="text-muted">Valor atual: <span id="a_add_g_out"><%= @a_add_g || 0 %></span></small>
+          </div>
+          <%= range_field_tag :a_add_g, (@a_add_g || 0),
+                min: 0, max: 255, step: 1, class: "form-range", id: "a_add_g" %>
+        </div>
+  
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <label class="form-label mb-1">B</label>
+            <small class="text-muted">Valor atual: <span id="a_add_b_out"><%= @a_add_b || 0 %></span></small>
+          </div>
+          <%= range_field_tag :a_add_b, (@a_add_b || 0),
+                min: 0, max: 255, step: 1, class: "form-range", id: "a_add_b" %>
+        </div>
+  
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <label class="form-label mb-1">A</label>
+            <small class="text-muted">Valor atual: <span id="a_add_alpha_out"><%= @a_add_alpha || 0 %></span></small>
+          </div>
+          <%= range_field_tag :a_add_alpha, (@a_add_alpha || 0),
+                min: 0, max: 255, step: 1, class: "form-range", id: "a_add_alpha" %>
+        </div>
+      </div>
+  
+      <!-- DIREITA: botão (e espaço futuro) -->
+      <div class="col-12 col-lg-5">
+        <div class="text-lg-end text-start mb-3">
+          <%= submit_tag "Aplicar", class: "btn btn-success" %>
+        </div>
+  
+        <!-- espaço livre pra futuros widgets (histórico, presets, preview extra, etc.) -->
+        <!-- <div class="card"><div class="card-body">…</div></div> -->
+      </div>
+    </div>
+  </div>
+  
+        <!-- PANE: IMAGEM B (condicional) -->
+        <div class="tab-pane fade <%= @use_b ? '' : 'd-none' %>" id="pane-b" role="tabpanel" aria-labelledby="tab-b">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="mb-0">Ajustes da Imagem B</h6>
+            <%= submit_tag "Aplicar", class: "btn btn-success" %>
+          </div>
+  
+          <div class="row g-3">
             <div class="col-md-6">
-                <label class="form-label" for="inputA">Imagem A</label>
-                <input id="inputA" type="file" class="form-control" accept="image/*">
-                <div class="form-text">Obrigatória: será a base das operações.</div>
+              <label class="form-label">Adição (0–255)</label>
+              <%= range_field_tag :add_b, (@add_b || 0), min: 0, max: 255, step: 1, class: "form-range", id: "addB" %>
+              <small id="addB_out" class="text-muted">Valor atual: <%= @add_b || 0 %></small>
             </div>
+            <%# Adicione mais controles para B se quiser %>
+          </div>
         </div>
-        <div class="col-md-6">
-            <label class="form-label" for="inputB">Imagem B (opcional)</label>
-            <input id="inputB" type="file" class="form-control" accept="image/*">
-            <div class="form-text">Opcional: usada em soma/subtração e blend.</div>
-        </div>
-
-        <div class="row g-3 mb-4">
+  
+        <!-- PANE: OPERAÇÕES A ⇄ B (condicional) -->
+        <div class="tab-pane fade <%= @use_b ? '' : 'd-none' %>" id="pane-mix" role="tabpanel" aria-labelledby="tab-mix">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="mb-0">Operações entre A e B</h6>
+            <%= submit_tag "Aplicar", class: "btn btn-success" %>
+          </div>
+  
+          <div class="row g-3">
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-header">Imagem A</div>
-                    <div class="card-body text-center" id="previewA">
-                        <div class="text-muted">Prévia aparecerá aqui</div>
-                    </div>
-                </div>
+              <label class="form-label">Operação</label>
+              <%= select_tag :op_ab,
+                  options_for_select([["Soma (A+B)", "add"],
+                                      ["Subtração (A−B)", "sub"],
+                                      ["Blend", "blend"]], params[:op_ab]),
+                  class: "form-select" %>
             </div>
-        
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-header">Imagem B</div>
-                    <div class="card-body text-center" id="previewB">
-                        <div class="text-muted">Prévia aparecerá aqui</div>
-                    </div>
-                </div>
+              <label class="form-label">Peso A (0–100%)</label>
+              <%= range_field_tag :alpha_a, (params[:alpha_a] || 50), min: 0, max: 100, step: 1, class: "form-range", id: "alphaA" %>
+              <small id="alphaA_out" class="text-muted">50%</small>
             </div>
-        
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-header">Resultado</div>
-                    <div class="card-body text-center">
-                        <div class="mb-2 text-muted">Resultado aparecerá aqui</div>
-                        <canvas id="resultCanvas"></canvas>
-        
-                        <div class="mt-3 d-grid">
-                            <button id="btnDownload" class="btn btn-primary btn-sm" disabled>Baixar PNG</button>
-                        </div>
-                    </div>
-                </div>
+              <label class="form-label">Peso B (0–100%)</label>
+              <%= range_field_tag :alpha_b, (params[:alpha_b] || 50), min: 0, max: 100, step: 1, class: "form-range", id: "alphaB" %>
+              <small id="alphaB_out" class="text-muted">50%</small>
             </div>
+          </div>
         </div>
-        
-
-        <ul class="nav nav-tabs">
-            <li class="nav-item"><a href="#aba1" class="nav-link active" data-bs-toggle="tab">Adição/Subtração</a></li>
-            <li class="nav-item"><a href="#aba2" class="nav-link" data-bs-toggle="tab">a</a></li>
-            <li class="nav-item"><a href="#aba3" class="nav-link" data-bs-toggle="tab">a</a></li>
-                
-        </ul>
-
-        <div class="tab-content">
-            <div id="aba1" class="tab-pane fade show active">
-                Conteúdo da primeira aba
-            </div>
-            <div id="aba2" class="tab-pane fade">
-                Conteúdo da segunda aba
-            </div>
-            <div id="aba3" class="tab-pane fade">
-                Conteúdo da terceira aba
-            </div>
-        </div>
-    </div>     
-</body>
-</html>
+      </div>
+  
+    <% end %>
+  </div>
+  
