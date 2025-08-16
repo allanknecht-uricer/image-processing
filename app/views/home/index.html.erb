@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Processamento de Imagens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="mb-4">Processamento de Imagens</h1>
+        
+        <div class="row g-3 mb-3">
+            <div class="col-md-6">
+                <label class="form-label" for="inputA">Imagem A</label>
+                <input id="inputA" type="file" class="form-control" accept="image/*">
+                <div class="form-text">Obrigatória: será a base das operações.</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label" for="inputB">Imagem B (opcional)</label>
+            <input id="inputB" type="file" class="form-control" accept="image/*">
+            <div class="form-text">Opcional: usada em soma/subtração e blend.</div>
+        </div>
+
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Imagem A</div>
+                    <div class="card-body text-center" id="previewA">
+                        <div class="text-muted">Prévia aparecerá aqui</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Imagem B</div>
+                    <div class="card-body text-center" id="previewB">
+                        <div class="text-muted">Prévia aparecerá aqui</div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">Resultado</div>
+                    <div class="card-body text-center">
+                        <div class="mb-2 text-muted">Resultado aparecerá aqui</div>
+                        <canvas id="resultCanvas"></canvas>
+        
+                        <div class="mt-3 d-grid">
+                            <button id="btnDownload" class="btn btn-primary btn-sm" disabled>Baixar PNG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#aba1" class="nav-link active" data-bs-toggle="tab">Adição/Subtração</a></li>
+            <li class="nav-item"><a href="#aba2" class="nav-link" data-bs-toggle="tab">a</a></li>
+            <li class="nav-item"><a href="#aba3" class="nav-link" data-bs-toggle="tab">a</a></li>
+                
+        </ul>
+
+        <div class="tab-content">
+            <div id="aba1" class="tab-pane fade show active">
+                Conteúdo da primeira aba
+            </div>
+            <div id="aba2" class="tab-pane fade">
+                Conteúdo da segunda aba
+            </div>
+            <div id="aba3" class="tab-pane fade">
+                Conteúdo da terceira aba
+            </div>
+        </div>
+    </div>     
+</body>
+</html>

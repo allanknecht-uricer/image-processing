@@ -1,0 +1,644 @@
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.18.0.1 at 2025-08-16 02:25:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/ruby/3.1.0/gems/railties-7.1.5.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/ruby/3.1.0/gems/railties-7.1.5.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 386)
+Completed 200 OK in 285ms (Views: 63.5ms | ActiveRecord: 0.0ms | Allocations: 7504)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 02:48:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 711.5ms | Allocations: 78185)
+Completed 200 OK in 732ms (Views: 722.5ms | ActiveRecord: 0.0ms | Allocations: 79347)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 02:48:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 122.0ms | Allocations: 6948)
+Completed 200 OK in 125ms (Views: 123.0ms | ActiveRecord: 0.0ms | Allocations: 7242)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 02:58:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 1698)
+Completed 200 OK in 69ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 2768)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 02:58:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 1125)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.0ms | Allocations: 1375)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 02:58:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 1113)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 1345)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 02:59:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 130)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 1707)
+Completed 200 OK in 90ms (Views: 73.8ms | ActiveRecord: 0.0ms | Allocations: 2767)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:02:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 1709)
+Completed 200 OK in 64ms (Views: 55.3ms | ActiveRecord: 0.0ms | Allocations: 2773)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:20:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 183)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 1764)
+Completed 200 OK in 59ms (Views: 50.8ms | ActiveRecord: 0.0ms | Allocations: 2824)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:31:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 1748)
+Completed 200 OK in 62ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 2812)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:33:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 1729)
+Completed 200 OK in 63ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 2789)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:34:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 1767)
+Completed 200 OK in 62ms (Views: 53.7ms | ActiveRecord: 0.0ms | Allocations: 2832)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:40:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 1757)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 2822)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:44:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 1727)
+Completed 200 OK in 64ms (Views: 55.6ms | ActiveRecord: 0.0ms | Allocations: 2787)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:44:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 1740)
+Completed 200 OK in 62ms (Views: 54.2ms | ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:45:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 1735)
+Completed 200 OK in 61ms (Views: 52.1ms | ActiveRecord: 0.0ms | Allocations: 2799)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:50:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 171)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 1744)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 171)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 1757)
+Completed 200 OK in 63ms (Views: 54.3ms | ActiveRecord: 0.0ms | Allocations: 2817)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | Allocations: 1747)
+Completed 200 OK in 60ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 2812)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 1736)
+Completed 200 OK in 71ms (Views: 61.9ms | ActiveRecord: 0.0ms | Allocations: 2801)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 1110)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 1360)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 1110)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 1137)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 1369)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 1119)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 1351)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:53:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 1107)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 1339)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:58:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 1757)
+Completed 200 OK in 63ms (Views: 53.9ms | ActiveRecord: 0.0ms | Allocations: 2817)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:58:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 1134)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 1384)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 03:58:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 1119)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.0ms | Allocations: 1351)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:01:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 1755)
+Completed 200 OK in 62ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 2820)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:04:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 1113)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 1363)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:09:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 1745)
+Completed 200 OK in 61ms (Views: 52.3ms | ActiveRecord: 0.0ms | Allocations: 2810)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:18:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 1769)
+Completed 200 OK in 51ms (Views: 43.8ms | ActiveRecord: 0.0ms | Allocations: 2829)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:19:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 1788)
+Completed 200 OK in 51ms (Views: 43.5ms | ActiveRecord: 0.0ms | Allocations: 2853)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:20:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 1757)
+Completed 200 OK in 50ms (Views: 42.7ms | ActiveRecord: 0.0ms | Allocations: 2822)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:25:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 1779)
+Completed 200 OK in 50ms (Views: 42.9ms | ActiveRecord: 0.0ms | Allocations: 2839)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:25:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 1116)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 1366)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:26:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 202)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 1777)
+Completed 200 OK in 50ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 2842)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:26:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 1776)
+Completed 200 OK in 49ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 2841)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:26:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 199)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 1777)
+Completed 200 OK in 50ms (Views: 42.6ms | ActiveRecord: 0.0ms | Allocations: 2837)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:31:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 200)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 1772)
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 2837)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:36:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 42.2ms | Allocations: 3207)
+  Rendered layout layouts/application.html.erb (Duration: 43.0ms | Allocations: 3305)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms | Allocations: 4359)
+
+
+  
+ActionView::Template::Error (The asset "image_preview.js" is not present in the asset pipeline.
+):
+     6:   <title>Processamento de Imagens</title>
+     7:   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     8:   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     9:   <%= javascript_include_tag "image_preview", defer: true %>
+    10: 
+    11: </head>
+    12: <body>
+  
+app/views/home/index.html.erb:9
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:36:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 1767)
+Completed 200 OK in 49ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 2832)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:37:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 2335)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 2424)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 3465)
+
+
+  
+ActionView::Template::Error (The asset "image_preview.js" is not present in the asset pipeline.
+):
+     6:   <title>Processamento de Imagens</title>
+     7:   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     8:   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     9:   <%= javascript_include_tag "image_preview", defer: true %>
+    10: </head>
+    11: <body>
+    12:     <div class="container py-4">
+  
+app/views/home/index.html.erb:9
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:48:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 195)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 1779)
+Completed 200 OK in 60ms (Views: 52.7ms | ActiveRecord: 0.0ms | Allocations: 2840)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:54:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 195)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 1778)
+Completed 200 OK in 52ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 2838)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:54:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 1113)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 1363)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:54:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 1123)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 1357)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:58:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 2341)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 2430)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 3471)
+
+
+  
+ActionView::Template::Error (The asset "image_preview.js" is not present in the asset pipeline.
+):
+     5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+     6:   <title>Processamento de Imagens</title>
+     7:   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     8:   <%= javascript_include_tag "image_preview", defer: true %>
+     9: 
+    10:   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    11: </head>
+  
+app/views/home/index.html.erb:8
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:59:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 2167)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2407)
+
+
+  
+ActionView::Template::Error (The asset "image_preview.js" is not present in the asset pipeline.
+):
+     5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+     6:   <title>Processamento de Imagens</title>
+     7:   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     8:   <%= javascript_include_tag "image_preview", defer: true %>
+     9: 
+    10:   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    11: </head>
+  
+app/views/home/index.html.erb:8
+Started GET "/" for 172.18.0.1 at 2025-08-16 04:59:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 2082)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 2165)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2386)
+
+
+  
+ActionView::Template::Error (The asset "image_preview.js" is not present in the asset pipeline.
+):
+     5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+     6:   <title>Processamento de Imagens</title>
+     7:   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     8:   <%= javascript_include_tag "image_preview", defer: true %>
+     9: 
+    10:   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    11: </head>
+  
+app/views/home/index.html.erb:8
+Started GET "/" for 172.18.0.1 at 2025-08-16 05:00:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 2337)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 2426)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 3464)
+
+
+  
+ActionView::Template::Error (The asset "image_preview.js" is not present in the asset pipeline.
+):
+     5:   <meta name="viewport" content="width=device-width, initial-scale=1">
+     6:   <title>Processamento de Imagens</title>
+     7:   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     8:   <%= javascript_include_tag "image_preview", defer: true %>
+     9: 
+    10:   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    11: </head>
+  
+app/views/home/index.html.erb:8
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.18.0.1 at 2025-08-16 05:00:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 808.9ms | Allocations: 81387)
+  Rendered layout layouts/application.html.erb (Duration: 850.9ms | Allocations: 84423)
+Completed 200 OK in 919ms (Views: 869.7ms | ActiveRecord: 0.0ms | Allocations: 88742)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 05:01:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 25.7ms | Allocations: 1188)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 3007)
+Completed 200 OK in 66ms (Views: 58.8ms | ActiveRecord: 0.0ms | Allocations: 4075)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 05:01:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 29.7ms | Allocations: 805)
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | Allocations: 2290)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.0ms | Allocations: 2547)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 05:02:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 26.9ms | Allocations: 1190)
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 2990)
+Completed 200 OK in 68ms (Views: 61.6ms | ActiveRecord: 0.0ms | Allocations: 4059)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 05:02:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 26.3ms | Allocations: 1188)
+  Rendered layout layouts/application.html.erb (Duration: 51.2ms | Allocations: 2981)
+Completed 200 OK in 66ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 4047)
+
+
+Started GET "/" for 172.18.0.1 at 2025-08-16 05:02:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 2541)
+Completed 200 OK in 66ms (Views: 59.2ms | ActiveRecord: 0.0ms | Allocations: 3604)
+
+
