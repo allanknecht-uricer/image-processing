@@ -1,0 +1,26 @@
+<%= turbo_stream.replace "result_card" do %>
+    <div class="col-md-4" id="result_card">
+      <div class="card h-100">
+        <div class="card-header">Resultado</div>
+        <div class="card-body text-center">
+          <% if defined?(@result_url) && @result_url.present? %>
+            <%= image_tag @result_url, class: "img-fluid rounded" %>
+          <% else %>
+            <div class="text-muted">Será exibido após aplicar operação</div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  
+  <%= turbo_stream.replace "flash" do %>
+    <div id="flash">
+      <% flash.each do |type, msg| %>
+        <div class="alert <%= type.to_s == 'alert' ? 'alert-danger' : 'alert-success' %> alert-dismissible fade show" role="alert">
+          <%= msg %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+  

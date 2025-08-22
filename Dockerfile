@@ -2,14 +2,14 @@
 FROM ruby:3.1.4
 
 # Instale dependências do sistema
-RUN apt-get update -qq && apt-get install -y \
-    build-essential \
-    libpq-dev \
-    nodejs \
-    npm \
-    yarn \
-    imagemagick \
-    && rm -rf /var/lib/apt/lists/*
+#RUN apt-get update -qq && apt-get install -y \
+#    build-essential \
+#    libpq-dev \
+#    nodejs \
+#    npm \
+#    yarn \
+#    imagemagick \
+#    && rm -rf /var/lib/apt/lists/*
 
 
 # Atualize RubyGems e Bundler

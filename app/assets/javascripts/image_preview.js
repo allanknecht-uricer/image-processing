@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (captionEl) captionEl.textContent = "";
       return;
     }
-    if (!file.type.startsWith("image/")) {
+    if (!file.type || !file.type.startsWith("image/")) {
       previewEl.innerHTML = '<div class="text-danger">Arquivo não é uma imagem</div>';
       if (captionEl) captionEl.textContent = "";
       return;
@@ -62,13 +62,21 @@ document.addEventListener("DOMContentLoaded", () => {
   function ensureTabAIfHidden() {
     const active = document.querySelector('#opsContent .tab-pane.show.active');
     if (active && (active.id === "pane-b" || active.id === "pane-mix")) {
-      const tab = new bootstrap.Tab(tabAButton);
-      tab.show();
+      if (window.bootstrap && typeof bootstrap.Tab === "function") {
+        const tab = new bootstrap.Tab(tabAButton);
+        tab.show();
+      } else {
+        // fallback: ativa manualmente classes
+        document.querySelectorAll('#opsContent .tab-pane').forEach(el => el.classList.remove('show','active'));
+        document.getElementById('pane-a')?.classList.add('show','active');
+        document.querySelectorAll('#opsTabs .nav-link').forEach(el => el.classList.remove('active'));
+        tabAButton?.classList.add('active');
+      }
     }
   }
 
   function toggleB() {
-    const on = useB && useB.checked;
+    const on = !!(useB && useB.checked);
     [inputBGroup, cardB, tabBItem, paneB, tabMixItem, paneMix].forEach(el => {
       if (el) el.classList.toggle("d-none", !on);
     });
@@ -92,10 +100,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (s && o) {
       o.textContent = `${s.value}${suffix}`;
       s.addEventListener("input", () => (o.textContent = `${s.value}${suffix}`));
+      s.addEventListener("change", () => (o.textContent = `${s.value}${suffix}`));
     }
   }
-  bindSlider("addA", "addA_out");
+  // A
+  bindSlider("a_add_r", "a_add_r_out");
+  bindSlider("a_add_g", "a_add_g_out");
+  bindSlider("a_add_b", "a_add_b_out");
+  bindSlider("a_add_alpha", "a_add_alpha_out");
+  // B
   bindSlider("addB", "addB_out");
+  // mix
   bindSlider("alphaA", "alphaA_out", "%");
   bindSlider("alphaB", "alphaB_out", "%");
 });

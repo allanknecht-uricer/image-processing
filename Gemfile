@@ -71,3 +71,6 @@ end
 gem "mini_magick"
 
 gem "image_processing", "~> 1.12"
+
+
+gem "chunky_png"
